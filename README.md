@@ -31,7 +31,7 @@ Conceptual Data Model :
 Creating a conceptual data model involves defining the high-level entities, their attributes, and relationships that will be used in the system. Here's a conceptual data model for the proposed social platform for aggregating and summarizing technical content:
 
 
-
+ paintext
 
 +--------------------+                   +-------------------+
 |        User        |                   |       Author      |
@@ -100,7 +100,7 @@ Creating a conceptual data model involves defining the high-level entities, thei
 | ActivityDetails           |
 +---------------------------+
 
-
+Paste the content in between 
 
 Entities and Relationships
 1. User
