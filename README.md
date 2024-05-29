@@ -13,8 +13,8 @@ Proposed Solution:
 To address this issue, we propose the development of a comprehensive social platform designed to streamline the process of accessing and managing technical content. Our platform will offer the following features:
 
 1. Automated Content Aggregation: Users can configure their settings to automatically fetch and summarize content from preferred authors on LinkedIn, Medium, Substack, and other blogging platforms. By simply entering their LinkedIn details and selecting the bloggers they want to follow, the platform will provide a concise gist of the latest posts from these authors.
-2. 
-3. Centralized Article Management: The platform will also enable users to store links to their favorite articles in one convenient location. This central repository will make it easy to organize, access, and revisit valuable content without the need to navigate through multiple websites.
+   
+2. Centralized Article Management: The platform will also enable users to store links to their favorite articles in one convenient location. This central repository will make it easy to organize, access, and revisit valuable content without the need to navigate through multiple websites.
 
    
 Benefits:
