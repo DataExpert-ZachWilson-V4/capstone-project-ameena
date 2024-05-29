@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/1lXY_Wlg)
 
-	# TechGist 
+	####TechGist 
  
 A social platform where you get summary of all the technical reading you want to do from your subscriptions , articles , linkedin , books , youtube transcripts, audio and pod cast ( audio to text convertion) 
 
@@ -56,17 +56,23 @@ Entities and Relationships
         * PublishDate
         * URL
         * AuthorID (Foreign Key)
-4. UserFavorite
+          
+4. UserFavoriteAuthors
+   
+    * Attributes:
+        * FavoriteID (Primary Key)
+        * UserID (Foreign Key)
+        * AuthorID (Foreign Key)
+        * DateAdded
+          
+5. UserFavoriteArticles
+   
     * Attributes:
         * FavoriteID (Primary Key)
         * UserID (Foreign Key)
         * ArticleID (Foreign Key)
         * DateAdded
-5. Platform
-    * Attributes:
-        * PlatformID (Primary Key)
-        * Name
-        * BaseURL
+          
 6. UserPlatformSettings
     * Attributes:
         * SettingsID (Primary Key)
@@ -74,6 +80,15 @@ Entities and Relationships
         * PlatformID (Foreign Key)
         * ProfileURL
         * FollowAuthors (List of AuthorIDs)
+     
+7. UserTimeline
+
+Attributes:
+TimelineID (Primary Key)
+UserID (Foreign Key)
+ActivityType (e.g., 'Followed Author', 'Read Article', 'Saved Article')
+ActivityDate
+ActivityDetails
           
 Relationships
 
