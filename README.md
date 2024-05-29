@@ -30,6 +30,74 @@ Conceptual Data Model :
 
 Creating a conceptual data model involves defining the high-level entities, their attributes, and relationships that will be used in the system. Here's a conceptual data model for the proposed social platform for aggregating and summarizing technical content:
 
+
++--------------------+                   +-------------------+
+|        User        |                   |       Author      |
++--------------------+                   +-------------------+
+| UserID (PK)        |                   | AuthorID (PK)     |
+| Name               |                   | Name              |
+| Email              |                   | ProfileURL        |
+| Password           |                   | Platform          |
+| LinkedInProfile    |                   +-------------------+
+| MediumProfile      |                            |
+| SubstackProfile    |                            |
+| OtherProfiles      |                            |
++--------------------+                            |
+       |                                         |
+       | 1                                       | M
+       |                                         |
++---------------------------+           +--------------------------+
+|   UserFavoriteAuthors     |           |         Article          |
++---------------------------+           +--------------------------+
+| FavoriteID (PK)           |           | ArticleID (PK)           |
+| UserID (FK)               |-----------| AuthorID (FK)            |
+| AuthorID (FK)             |           | Title                    |
+| DateAdded                 |           | Content                  |
++---------------------------+           | Summary                  |
+       |                                 | PublishDate              |
+       | 1                               | URL                      |
+       |                                 +--------------------------+
+       |
+       |
+       | 1
+       |
+       |
+       | M
++---------------------------+
+|   UserFavoriteArticles    |
++---------------------------+
+| FavoriteID (PK)           |
+| UserID (FK)               |
+| ArticleID (FK)            |
+| DateAdded                 |
++---------------------------+
+       |
+       | 1
+       |
+       | M
++---------------------------+
+| UserPlatformSettings      |
++---------------------------+
+| SettingsID (PK)           |
+| UserID (FK)               |
+| PlatformID (FK)           |
+| ProfileURL                |
+| FollowAuthors (List)      |
++---------------------------+
+       |
+       | 1
+       |
+       | M
++---------------------------+
+|       UserTimeline        |
++---------------------------+
+| TimelineID (PK)           |
+| UserID (FK)               |
+| ActivityType              |
+| ActivityDate              |
+| ActivityDetails           |
++---------------------------+
+
 Entities and Relationships
 1. User
     * Attributes:
@@ -98,8 +166,6 @@ Relationships
 * Article is written by Author
 * Article belongs to Platform
 * UserPlatformSettings links User and Platform
-
-
 
 Analytics dashboard :
 
