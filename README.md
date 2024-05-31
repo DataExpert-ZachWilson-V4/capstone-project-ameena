@@ -173,8 +173,21 @@ Relationships
 
 Analytics dashboard :
 
-1. Number of users onboarded
+1. Active Users: The number of users actively using the TechGist service within a specific time frame, typically measured monthly (MAU - Monthly Active Users).
+2. Saved Items: The total number of articles, videos, and other content saved by users.
+3. Engagement Metrics: This includes metrics like the average time spent reading or watching saved content, the frequency of item saves, and the number of items read or viewed per user.
+4. Retention Rates: The percentage of users who continue to use TechGist over time, indicating user loyalty and satisfaction.
+5. New User Acquisition: The rate at which new users are signing up for TechGist, often measured through marketing efforts, referral programs, and other user acquisition strategies.
+6. Customer Satisfaction and NPS (Net Promoter Score): Measures of how satisfied users are with TechGist and how likely they are to recommend it to others (Cascade Strategy) (Oberlo) .
+7. Revenue Metrics: For TechGist’s premium services, this includes metrics such as subscription rates, revenue from premium users, and overall revenue growth.
+8. Content Categorization Efficiency: Metrics that track how effectively TechGist’s algorithms categorize and recommend content to users, enhancing the user experience.
+9. User Demographics: Data on the age, location, and interests of TechGist’s user base to tailor content and marketing strategies more effectively.
+10. Churn Rate: The percentage of users who stop using TechGist over a given period, providing insights into user retention challenges (Whale) .
 
-FastAPI:
 
-We can build an API that will allow our Data Scientists to analyze the data and make predictions or recomendations to the product.
+Tracking these metrics helps Pocket continuously improve its service, ensuring it meets user needs and stays competitive in the market.
+
+
+If time permits then would love to build an API using FASTAPI
+
+This API will allow our Data Scientists to analyze the data and make predictions or recomendations to the product.
